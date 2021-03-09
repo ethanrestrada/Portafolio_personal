@@ -4,13 +4,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#home{
-    background-color: aqua;
-}
-
 #header{ /*Contenedor header*/
     background-color: rgb(151, 1, 1);
     height: 3.5em;
+    height: 9vh;
     width: 100%;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
     position: fixed;
@@ -19,34 +16,58 @@
 
 #header a{
     color: black;
+    color: rgb(228, 227, 227);
     font-size: 1.3em;
     margin-top: 0.2em;
     margin-right: 1.5em;
 }
 
-#header a:hover{
-    color: darkcyan;
-}
-
 #home{ /*Section home*/ 
     min-height: 100vh;
     min-width: 100%;
-}
-
-#about{
-    background-color: darkgray;
+    height: 100vh;
+    width: 100%;
 }
 
 #home-information{ /*Contenedor name*/
     background-color: rgb(97, 97, 97);
     min-height: 100vh;
     min-width: 100%;
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
+    height: 100vh;
+    width: 100%;
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-#portafolio{
-    background-color: cadetblue;
+#name-work{
+    background-color: rgba(151, 1, 1, 0.89);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    height: 70vh;
+    width: 80%;
+    margin:auto;
+    padding: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vertical-line{
+    background-color: grey;
+    height: 50%;
+    width: 1%;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 10px;
+}
+
+#name-work #img{
+    background-image: url(../IMG/html-coding.png);
+    height: 232px;
+    width: 232px;
 }
 
 #about{ /*Section home*/
@@ -54,13 +75,124 @@
     min-width: 100%;
 }
 
+#name-n-work{
+    color: rgb(228, 227, 227);
+    font-size: 2em;
+}
+
 #containerst{
     background-color: rgb(63, 62, 62);
     min-height: 50vh;
 }
 
-#social-media{
-    background-color: darkcyan;
+#square{
+    background-color: rgb(97, 96, 96);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    animation: squares 5s linear infinite;
+}
+
+#square:nth-child(1){
+    height: 10vh;
+    width: 10vh;
+    left: 2%;
+    animation-delay: 1s;
+}
+
+#square:nth-child(2){
+    height: 5vh;
+    width: 5vh;
+    left: 15%;
+    animation-delay: 5s;
+}
+
+#square:nth-child(3){
+    height: 15vh;
+    width: 15vh;
+    left: 35%;
+    animation-delay: 6s;
+}
+
+#square:nth-child(4){
+    height: 7vh;
+    width: 7vh;
+    left: 55%;
+    animation-delay: 2s;
+}
+
+#square:nth-child(5){
+    height: 10vh;
+    width: 10vh;
+    left: 60%;
+    animation-delay: 8s;
+}
+
+#square:nth-child(6){
+    height: 12vh;
+    width: 12vh;
+    left: 75%;
+    animation-delay: 7s;
+}
+
+#square:nth-child(7){
+    height: 8vh;
+    width: 8vh;
+    left: 90%;
+    animation-delay: 4s;
+}
+
+#square:nth-child(8){
+    height: 3vh;
+    width: 3vh;
+    left: 95%;
+    animation-delay: 3s;
+}
+
+@keyframes squares{
+    0%   {bottom: 0; opacity: 0;}
+    30%  {transform: translateX(30px); opacity: .3;}
+    50%  {opacity: .4;}
+    100% {bottom: 100vh; opacity: 0;}
+}
+
+#division-hm-abt{
+    background-color: rgb(228, 227, 227);
+    height: 2vh;
+    width: 90%;
+    border-radius: 10px;    
+    position: absolute;
+    bottom: 0;
+}
+
+#about{ /*Section About*/
+    height: 145vh;
+    width: 100%;
+}
+
+#personal-information{ /*Contenedor Personal-information*/
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(148, 147, 147));
+    height: 145vh;
+    width: 100%;
+}
+
+#content{
+    background-color: rgba(151, 1, 1, 0.89);
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#whoim{
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #personal-information{ /*Contenedor information*/
@@ -69,24 +201,143 @@
     min-width: 100%;
 }
 
+#whoim #img{
+    background-image: url(../IMG/man.png);
+    height: 232px;
+    width: 232px;
+    margin-top: 12vh;
+}
+
+#description{
+    background-color: rgb(53, 51, 51);
+    min-height: 50vh;
+    min-width: 100%;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    margin: auto;
+    padding: 2em;
+    width: 30%;
+}
+
+#description h1{
+    color: rgb(228, 227, 227);
+}
+
+#description p{
+    color: rgb(228, 227, 227);
+    text-align: center;
+}
+
+#tecnologias-dominadas{
+    height: 40vh;
+    width: 100%;
+    padding: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#cpp{
+    background-color:gray;
+    border-color: transparent;
+    height: 35vh;
+    padding: 2vh;
+}
+
+#html, #css, #php{
+    background-color: gray;
+    border-color: transparent;
+    margin-left: 5em;
+    height: 35vh;
+    padding: 2vh;
+}
+
+#img{
+    height: 128px;
+    width: 128px;
+}
+
+#division-abt-port{
+    background-color: rgb(228, 227, 227);
+    height: 2vh;
+    width: 90%;
+    border-radius: 10px; 
+    margin: auto;
+}
+
 #portfolio{ /*Section portfolio*/
     min-height: 100vh;
     min-width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 #knowledge{ /*Contenedor knowledge*/
     background-color: rgb(54, 54, 54);
     min-height: 100vh;
     min-width: 100%;
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(148, 147, 147));
+    height: 100vh;
+    width: 100%;
 }
 
 #social-media{ /*Section social-media*/
     min-height: 30vh;
     min-width: 100%;
+    height: 70vh;
+    width: 100%;
 }
 
 #apps{ /*Contenedor apps*/
     background-color: rgb(97, 97, 97);
     min-height: 30vh;
     min-width: 100%;
+    background-color: gray;
+    height: 70vh;
+    width: 100%;
+    padding: 2em;
+}
+
+#massage{
+    height: 15vh;
+    width: 65%;
+    margin: auto;
+}
+
+#massage h1{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#bt{
+    display: flex;
+    justify-content: center;
+}
+
+#btn-mesg a{
+    color:rgb(241, 228, 228);
+    border-color: rgb(58, 57, 57);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#btn-mesg:hover{
+    background-color: rgb(58, 57, 57);
+}
+
+#social-apps{
+    width: 20vh;
+    height: 20vh;
+}
+
+#facebook{
+    background-image: url(../IMG/facebook_logo.png);
+    height: 64px;
+    width: 64px;
+}
+
+#git{
+    background-image: url(../IMG/git_logo.png);
+    height: 64px;
+    width: 64px;
 }
