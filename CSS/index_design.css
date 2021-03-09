@@ -1,24 +1,92 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 #home{
     background-color: aqua;
+}
+
+#header{ /*Contenedor header*/
+    background-color: rgb(151, 1, 1);
+    height: 3.5em;
+    width: 100%;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    position: fixed;
+    z-index: 1;
+}
+
+#header a{
+    color: black;
+    font-size: 1.3em;
+    margin-top: 0.2em;
+    margin-right: 1.5em;
+}
+
+#header a:hover{
+    color: darkcyan;
+}
+
+#home{ /*Section home*/ 
     min-height: 100vh;
+    min-width: 100%;
 }
 
 #about{
     background-color: darkgray;
+}
+
+#home-information{ /*Contenedor name*/
+    background-color: rgb(97, 97, 97);
     min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    text-align: center;
 }
 
 #portafolio{
     background-color: cadetblue;
+}
+
+#about{ /*Section home*/
     min-height: 100vh;
+    min-width: 100%;
+}
+
+#containerst{
+    background-color: rgb(63, 62, 62);
+    min-height: 50vh;
 }
 
 #social-media{
     background-color: darkcyan;
+}
+
+#personal-information{ /*Contenedor information*/
+    background-color: rgb(53, 51, 51);
+    min-height: 50vh;
+    min-width: 100%;
+}
+
+#portfolio{ /*Section portfolio*/
     min-height: 100vh;
+    min-width: 100%;
+}
+
+#knowledge{ /*Contenedor knowledge*/
+    background-color: rgb(54, 54, 54);
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+#social-media{ /*Section social-media*/
+    min-height: 30vh;
+    min-width: 100%;
+}
+
+#apps{ /*Contenedor apps*/
+    background-color: rgb(97, 97, 97);
+    min-height: 30vh;
+    min-width: 100%;
 }
