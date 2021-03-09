@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#home{
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+#about{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+#portafolio{
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+
+#social-media{
+    background-color: darkcyan;
+    min-height: 100vh;
+}
