@@ -3,10 +3,8 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
-
 #header{ /*Contenedor header*/
     background-color: rgb(151, 1, 1);
-    height: 3.5em;
     height: 9vh;
     width: 100%;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
@@ -15,29 +13,26 @@
 }
 
 #header a{
-    color: black;
     color: rgb(228, 227, 227);
-    font-size: 1.3em;
-    margin-top: 0.2em;
+    font-size: 3.5vh;
+    margin-top: 1vh;
     margin-right: 1.5em;
 }
 
+#header a:hover{
+    color: darkcyan;
+}
+
 #home{ /*Section home*/ 
-    min-height: 100vh;
-    min-width: 100%;
     height: 100vh;
     width: 100%;
 }
 
 #home-information{ /*Contenedor name*/
-    background-color: rgb(97, 97, 97);
-    min-height: 100vh;
-    min-width: 100%;
     background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
     height: 100vh;
     width: 100%;
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -52,7 +47,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+align-items: center;
 }
 
 #vertical-line{
@@ -70,19 +65,9 @@
     width: 232px;
 }
 
-#about{ /*Section home*/
-    min-height: 100vh;
-    min-width: 100%;
-}
-
 #name-n-work{
     color: rgb(228, 227, 227);
-    font-size: 2em;
-}
-
-#containerst{
-    background-color: rgb(63, 62, 62);
-    min-height: 50vh;
+    font-size: 5vh;
 }
 
 #square{
@@ -93,7 +78,6 @@
     opacity: 0;
     animation: squares 5s linear infinite;
 }
-
 #square:nth-child(1){
     height: 10vh;
     width: 10vh;
@@ -121,7 +105,6 @@
     left: 55%;
     animation-delay: 2s;
 }
-
 #square:nth-child(5){
     height: 10vh;
     width: 10vh;
@@ -167,27 +150,29 @@
 }
 
 #about{ /*Section About*/
-    height: 145vh;
+    height: 165vh;
     width: 100%;
 }
 
 #personal-information{ /*Contenedor Personal-information*/
-    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(148, 147, 147));
-    height: 145vh;
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
+    height: 165vh;
     width: 100%;
 }
 
 #content{
     background-color: rgba(151, 1, 1, 0.89);
-    width: 90%;
-    height: 85vh;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    width: 95%;
+    height: 125vh;
     margin: auto;
-    margin-top: 10vh;
+    padding: 5vh;
+    border-radius: 5px;
 }
 
 #whoim{
     background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     margin: auto;
     padding: auto;
@@ -195,50 +180,71 @@
     justify-content: center;
 }
 
-#personal-information{ /*Contenedor information*/
-    background-color: rgb(53, 51, 51);
-    min-height: 50vh;
-    min-width: 100%;
-}
-
 #whoim #img{
     background-image: url(../IMG/man.png);
+    background-color: rgb(110, 105, 105);
     height: 232px;
     width: 232px;
-    margin-top: 12vh;
+    margin-top: 10vh;
+    border-radius: 50%;
 }
 
 #description{
-    background-color: rgb(53, 51, 51);
-    min-height: 50vh;
-    min-width: 100%;
+    background-image: linear-gradient(to right, rgb(88, 88, 88), rgb(114, 114, 114));
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    height: 70vh;
+    width: 100%; 
     margin: auto;
     padding: 2em;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-me{
+    height: 25vh;
     width: 30%;
+    padding: 2vh;
+    margin-top: 10vh;
 }
 
-#description h1{
-    color: rgb(228, 227, 227);
-}
-
-#description p{
+#about-me h1{
     color: rgb(228, 227, 227);
     text-align: center;
+    font-weight: bold;
 }
 
-#tecnologias-dominadas{
+#about-me p{
+    color: rgb(228, 227, 227);
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+#hability{
+    height: 42vh;
+    padding: 2vh;
+    margin-top: 15vh;
+    background-color: rgb(138, 23, 23);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+}
+
+#hability p{
+    color: rgb(228, 227, 227);
+}
+
+#knowledge{
     height: 40vh;
     width: 100%;
-    padding: 2em;
-    margin-top: 2em;
+    padding: 2vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #cpp{
     background-color:gray;
     border-color: transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
     height: 35vh;
     padding: 2vh;
 }
@@ -246,7 +252,7 @@
 #html, #css, #php{
     background-color: gray;
     border-color: transparent;
-    margin-left: 5em;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
     height: 35vh;
     padding: 2vh;
 }
@@ -256,56 +262,117 @@
     width: 128px;
 }
 
+#progress-bar{
+    background-color: rgb(155, 9, 9);
+}
+
 #division-abt-port{
     background-color: rgb(228, 227, 227);
     height: 2vh;
     width: 90%;
     border-radius: 10px; 
     margin: auto;
+    padding: auto;
+    margin-bottom: 10vh;
 }
 
 #portfolio{ /*Section portfolio*/
-    min-height: 100vh;
-    min-width: 100%;
-    height: 100vh;
+    height: 175vh;
     width: 100%;
 }
 
-#knowledge{ /*Contenedor knowledge*/
-    background-color: rgb(54, 54, 54);
-    min-height: 100vh;
-    min-width: 100%;
-    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(148, 147, 147));
-    height: 100vh;
+#projects{ /*Contenedor projects*/
+    background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(105, 105, 105));
+    height: 175vh;
     width: 100%;
+}
+
+#my-projects{
+    background-color: rgba(151, 1, 1, 0.89);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    width: 95%;
+    height: 150vh;
+    margin: auto;
+    padding: 5vh;
+}
+
+#tittle-project{
+    margin-bottom: 5vh;
+}
+
+#tittle-project h1{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(228, 227, 227);
+}
+
+#project1, #project2, #project3{
+    background-color: grey;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    height: 35vh;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#carousel-project1, #carousel-project2{
+    height: 35vh;
+    width: 50%; 
+}
+
+#project-img{
+    height: 35vh;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#project3-img{
+    height: 35vh;
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#info-project{
+    height: 35vh;
+    width: 45%;
+    padding: 3vh;
+    padding-right: 10vh;
+}
+
+#info-project h1, p{
+    color: rgb(231, 226, 226);
 }
 
 #social-media{ /*Section social-media*/
-    min-height: 30vh;
-    min-width: 100%;
     height: 70vh;
     width: 100%;
 }
 
 #apps{ /*Contenedor apps*/
-    background-color: rgb(97, 97, 97);
-    min-height: 30vh;
-    min-width: 100%;
-    background-color: gray;
+    background-color: rgb(56, 49, 49);
     height: 70vh;
     width: 100%;
     padding: 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
 #massage{
-    height: 15vh;
-    width: 65%;
+    height: 20vh;
+    width: 40%;
     margin: auto;
 }
 
 #massage h1{
     font-size: 1.8em;
     text-align: center;
+    color: rgb(228, 227, 227);
 }
 
 #bt{
@@ -322,22 +389,54 @@
 }
 
 #btn-mesg:hover{
-    background-color: rgb(58, 57, 57);
+    background-color: gray;
 }
 
 #social-apps{
     width: 20vh;
-    height: 20vh;
+    height: 40vh;
+    padding: auto;
+    margin: auto;
 }
 
 #facebook{
-    background-image: url(../IMG/facebook_logo.png);
-    height: 64px;
-    width: 64px;
+    background-color: gray;
+    height: 74px;
+    width: 74px;
+    padding: 1vh;
+    margin: auto;
+    margin-bottom: 5vh; 
+    border-radius: 5px;
 }
 
 #git{
-    background-image: url(../IMG/git_logo.png);
+    background-color: gray;
     height: 64px;
     width: 64px;
+    margin: auto;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+
+}
+
+#linkedin{
+    background-color: gray;
+    height: 74px;
+    width: 74px;
+    padding: 1vh;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#social-apps img{
+    text-decoration: none;
+}
+
+#vertical-line2{
+    background-color: grey;
+    height: 100%;
+    width: 1%;
+    margin-left: 12em;
+    margin-right: 5em;
+    border-radius: 10px;
 }
