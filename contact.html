@@ -26,8 +26,8 @@
             <div id="styleback-form">
                 <div id="contact"><h1><strong>Contacto</strong></h1></div>
                 <div id="form">
-                    <form method="POST" action="Contact.html" autocomplete="off">
-                        <input type="text" placeholder="Nombre" id="name"><br>
+                    <form method="POST" action="sendmail.php" autocomplete="off">
+                        <input type="text" placeholder="Nombre" name="name" id="name" required><br>
                         <input type="email" name="email" id="mail" placeholder="Correo electronico"> <br>
                         <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea> <br>
                         <input class="btn btn-primary" type="submit" value="Enviar" id="enviar">
@@ -37,6 +37,8 @@
             </div>
         </div>
     </div>
+
+    
     
 </body>
 </html>
